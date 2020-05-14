@@ -27,7 +27,7 @@ builds:
         goarch: 386
       - goos: freebsd
         goarch: arm64
-    main: ./cmd/
+    main: ./
     ldflags: -s -w -X main.version={{.Version}} -X main.commit={{.ShortCommit}} -X main.date={{.Date}}
 
 archives:
